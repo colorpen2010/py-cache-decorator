@@ -1,5 +1,6 @@
 from typing import Callable, Any, Dict, Tuple
 
+
 def cache(func: Callable) -> Callable[..., Any]:
     cache_storage: Dict[Tuple[Any, ...], Any] = {}
 
